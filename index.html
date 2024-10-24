@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> التحول الرقمي في NCEMA</title>
+    <style>
+        @font-face {
+            font-family: 'Dubai';
+            src: url('https://fonts.cdnfonts.com/s/33069/Dubai-Regular.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        body {
+            font-family: 'Dubai', sans-serif;
+            text-align: right;
+            direction: rtl;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        header img {
+            max-width: 400px;
+            height: auto;
+        }
+        h1 {
+            color: #a1823a;
+            font-size: 36px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .mindmap {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        .mindmap .node {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 15px;
+            width: 250px;
+            text-align: center;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .mindmap .node:hover {
+            transform: scale(1.07);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+        }
+        .mindmap .node h2 {
+            font-size: 22px;
+            color: #a1823a;
+            margin-bottom: 10px;
+        }
+        .mindmap .node ul {
+            list-style: none;
+            padding: 0;
+            font-size: 16px;
+        }
+        .mindmap .node ul li {
+            margin: 8px 0;
+            color: #7a7a7a;
+        }
+        .icon {
+            font-size: 40px;
+            color: #a1823a;
+            margin-bottom: 15px;
+        }
+        .demo-button {
+            background-color: #a1823a;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            font-size: 14px;
+            font-family: 'Dubai', sans-serif;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background-color 0.3s ease;
+        }
+        .demo-button:hover {
+            background-color: #8a6e2d;
+        }
+        .status-label {
+            display: inline-block;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+            margin-bottom: 10px;
+            color: white;
+            font-family: 'Dubai', sans-serif;
+        }
+        .status-uat {
+            background-color: #007BFF; /* Blue for UAT */
+        }
+        .status-brd {
+            background-color: #17A2B8; /* Teal for BRD Review */
+        }
+        .status-dev {
+            background-color: #FFC107; /* Yellow for Development */
+        }
+        .status-released {
+            background-color: #28A745; /* Green for Released */
+        }
+        .status-initiation {
+            background-color: #6C757D; /* Gray for Initiation */
+        }
+        .status-deployment {
+            background-color: #DC3545; /* Red for Deployment */
+        }
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 14px;
+            color: #7f8c8d;
+        }
+    </style>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <img src="https://www.ncema.gov.ae/Content/SiteImages/logo-Horizantal-d.png" alt="NCEMA Logo">
+        </header>
+
+        <h1>التحول الرقمي في NCEMA</h1>
+
+        <div class="mindmap">
+            <div class="node">
+                <div class="icon"><i class="fas fa-network-wired"></i></div>
+                <h2>بوابة الإنترانت</h2>
+                <div class="status-label status-uat">الإصدار 1 في UAT</div>
+                <ul>
+                    <li>تنبيهات الطوارئ</li>
+                    <li>إشعارات مستوى الجاهزية</li>
+                    <li>الروابط السريعة</li>
+                    <li>مركز المعرفة</li>
+                    <li>كتالوج الخدمات</li>
+                </ul>
+                <button class="demo-button">عرض تجريبي</button>
+            </div>
+
+            <div class="node">
+                <div class="icon"><i class="fas fa-globe"></i></div>
+                <h2>موقع الإنترنت</h2>
+                <div class="status-label status-brd">مراجعة BRD</div>
+                <ul>
+                    <li>دعم ثنائي اللغة</li>
+                    <li>تصميم مستجيب</li>
+                    <li>واجهة مستخدم مريحة</li>
+                    <li>بحث شامل</li>
+                    <li>مساعد محادثة</li>
+                </ul>
+                <button class="demo-button">عرض تجريبي</button>
+            </div>
+
+            <div class="node">
+                <div class="icon"><i class="fas fa-users"></i></div>
+                <h2>التوظيف</h2>
+                <div class="status-label status-dev">في مرحلة التطوير</div>
+                <ul>
+                    <li>إدارة المتقدمين</li>
+                    <li>إدارة الطلبات</li>
+                    <li>إدارة المقابلات</li>
+                    <li>إدارة رسائل العرض</li>
+                </ul>
+                <button class="demo-button">عرض تجريبي</button>
+            </div>
+
+            <div class="node">
+                <div class="icon"><i class="fas fa-tasks"></i></div>
+                <h2>إدارة اللجان</h2>
+                <div class="status-label status-dev">في مرحلة التطوير</div>
+                <ul>
+                    <li>إدارة دورة الاجتماعات</li>
+                    <li>إدارة المستندات</li>
+                </ul>
+                <button class="demo-button">عرض تجريبي</button>
+            </div>
+
+            <div class="node">
+                <div class="icon"><i class="fas fa-check-circle"></i></div>
+                <h2>إدارة المهام</h2>
+                <div class="status-label status-released">تم الإصدار وفي UAT</div>
+                <ul>
+                    <li>لوحات كانبان</li>
+                    <li>إشعارات آلية</li>
+                </ul>
+                <button class="demo-button">عرض تجريبي</button>
+            </div>
+
+            <div class="node">
+                <div class="icon"><i class="fas fa-signature"></i></div>
+                <h2>التوقيع الإلكتروني</h2>
+                <div class="status-label status-initiation">مرحلة البدء</div>
+                <ul>
+                    <li>إعداد المستندات</li>
+                    <li>إدارة وتتبع المستندات</li>
+                </ul>
+                <button class="demo-button">عرض تجريبي</button>
+            </div>
+
+            <div class="node">
+                <div class="icon"><i class="fas fa-calendar-check"></i></div>
+                <h2>إدارة الحضور</h2>
+                <div class="status-label status-deployment">مرحلة النشر</div>
+                <ul>
+                    <li>تتبع الحضور في الوقت الفعلي</li>
+                    <li>إدارة الإجازات</li>
+                </ul>
+                <button class="demo-button">عرض تجريبي</button>
+            </div>
+
+            <div class="node">
+                <div class="icon"><i class="fas fa-mobile-alt"></i></div>
+                <h2>تطبيق الجوال</h2>
+                <div class="status-label status-initiation">مرحلة البدء</div>
+                <ul>
+                    <li>تنبيهات الطوارئ</li>
+                    <li>إدارة الحضور</li>
+                    <li>مركز المعرفة</li>
+                    <li>الإشعارات الفورية</li>
+                </ul>
+                <button class="demo-button">عرض تجريبي</button>
+            </div>
+
+            <div class="node">
+                <div class="icon"><i class="fas fa-comments"></i></div>
+                <h2>مشروع الدردشة</h2>
+                <div class="status-label status-deployment">مرحلة النشر</div>
+                <ul>
+                    <li>ردود آلية على الاستفسارات المتكررة</li>
+                    <li>دعم العملاء على مدار الساعة</li>
+                </ul>
+                <button class="demo-button">عرض تجريبي</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 NCEMA. جميع الحقوق محفوظة.
+    </footer>
+</body>
+</html>
