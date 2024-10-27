@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> التحول الرقمي في NCEMA</title>
+    <title>خريطة ذهنية - التحول الرقمي في NCEMA</title>
     <style>
         @font-face {
             font-family: 'Dubai';
@@ -40,13 +40,21 @@
             margin-bottom: 20px;
             text-align: center;
         }
+        .main-block {
+            border: 2px solid #a1823a;
+            border-radius: 10px;
+            background-color: #ffffff;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
         .mindmap {
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
             gap: 30px;
         }
-        .mindmap .node {
+        .node {
             background-color: #ffffff;
             padding: 20px;
             border-radius: 15px;
@@ -55,21 +63,22 @@
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-        .mindmap .node:hover {
+        .node:hover {
             transform: scale(1.07);
             box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
         }
-        .mindmap .node h2 {
+        .node h3 {
             font-size: 22px;
             color: #a1823a;
             margin-bottom: 10px;
         }
-        .mindmap .node ul {
+        .node ul {
             list-style: none;
             padding: 0;
             font-size: 16px;
+            text-align: right; /* Align list items to the right */
         }
-        .mindmap .node ul li {
+        .node ul li {
             margin: 8px 0;
             color: #7a7a7a;
         }
@@ -138,114 +147,157 @@
 
         <h1>التحول الرقمي في NCEMA</h1>
 
-        <div class="mindmap">
-            <div class="node">
-                <div class="icon"><i class="fas fa-network-wired"></i></div>
-                <h2>بوابة الإنترانت</h2>
-                <div class="status-label status-uat">الإصدار 1 في UAT</div>
-                <ul>
-                    <li>تنبيهات الطوارئ</li>
-                    <li>إشعارات مستوى الجاهزية</li>
-                    <li>الروابط السريعة</li>
-                    <li>مركز المعرفة</li>
-                    <li>كتالوج الخدمات</li>
-                </ul>
-                <button class="demo-button">عرض تجريبي</button>
-            </div>
+        <div class="main-block">
+            <h2>منظومة خارجية محدّثة</h2>
+            <div class="mindmap">
+                <!-- Recruitment Node -->
+                <div class="node">
+                    <div class="icon"><i class="fas fa-users"></i></div>
+                    <h3>التوظيف</h3>
+                    <div class="status-label status-dev">في مرحلة التطوير</div>
+                    <ul>
+                        <li>📄 إدارة شاملة لطلبات التوظيف</li>
+                        <li>👥 إدارة متكاملة للمتقدمين</li>
+                        <li>🔍 تتبع دقيق للمتقدمين</li>
+                        <li>💼 إدارة فعالة للمقابلات والاختيار</li>
+                        <li>🤖 أتمتة متقدمة للتوظيف</li>
+                        <li>📃 إدارة عروض العمل</li>
+                    </ul>
+                    <button class="demo-button">عرض تجريبي</button>
+                </div>
 
-            <div class="node">
-                <div class="icon"><i class="fas fa-globe"></i></div>
-                <h2>موقع الإنترنت</h2>
-                <div class="status-label status-brd">مراجعة BRD</div>
-                <ul>
-                    <li>دعم ثنائي اللغة</li>
-                    <li>تصميم مستجيب</li>
-                    <li>واجهة مستخدم مريحة</li>
-                    <li>بحث شامل</li>
-                    <li>مساعد محادثة</li>
-                </ul>
-                <button class="demo-button">عرض تجريبي</button>
+                <!-- Website Node -->
+                <div class="node">
+                    <div class="icon"><i class="fas fa-globe"></i></div>
+                    <h3>موقع الإنترنت</h3>
+                    <div class="status-label status-brd">مستند متطلبات العمل</div>
+                    <ul>
+                        <li>🔗 التنقل المبسط</li>
+                        <li>🖥️ واجهة تركز على المستخدم</li>
+                        <li>🤖 روبوت الدردشة</li>
+                        <li>🖼️ تسهيل عملية اضافة الصور</li>
+                        <li>💡 التخصيص المدعوم بالذكاء الاصطناعي</li>
+                        <li>🌐 منشئ المواقع</li>
+                    </ul>
+                    <button class="demo-button">عرض تجريبي</button>
+                </div>
             </div>
+        </div>
 
-            <div class="node">
-                <div class="icon"><i class="fas fa-users"></i></div>
-                <h2>التوظيف</h2>
-                <div class="status-label status-dev">في مرحلة التطوير</div>
-                <ul>
-                    <li>إدارة المتقدمين</li>
-                    <li>إدارة الطلبات</li>
-                    <li>إدارة المقابلات</li>
-                    <li>إدارة رسائل العرض</li>
-                </ul>
-                <button class="demo-button">عرض تجريبي</button>
-            </div>
+        <div class="main-block">
+            <h2>منظومة داخلية مؤتمتة</h2>
+            <div class="mindmap">
+                <!-- Intranet Portal Node -->
+                <div class="node">
+                    <div class="icon"><i class="fas fa-network-wired"></i></div>
+                    <h3>بوابة الإنترانت</h3>
+                    <div class="status-label status-uat">اختبار قبول المستخدم</div>
+                    <ul>
+                        <li>🚨 التنبيهات الفورية</li>
+                        <li>📋 حائط المعلومات المركزية</li>
+                        <li>📖 التفاعلات مع المحتوى</li>
+                        <li>📚 دليل الموظفين</li>
+                        <li>🛠️ إدارة الخدمات</li>
+                        <li>⚠️ مستوى الاستعداد والتنبيهات الطارئة</li>
+                    </ul>
+                    <button class="demo-button">عرض تجريبي</button>
+                </div>
 
-            <div class="node">
-                <div class="icon"><i class="fas fa-tasks"></i></div>
-                <h2>إدارة اللجان</h2>
-                <div class="status-label status-dev">في مرحلة التطوير</div>
-                <ul>
-                    <li>إدارة دورة الاجتماعات</li>
-                    <li>إدارة المستندات</li>
-                </ul>
-                <button class="demo-button">عرض تجريبي</button>
-            </div>
+                <!-- Electronic Signature Node -->
+                <div class="node">
+                    <div class="icon"><i class="fas fa-signature"></i></div>
+                    <h3>التوقيع الإلكتروني</h3>
+                    <div class="status-label status-initiation">مرحلة البدء</div>
+                    <ul>
+                        <li>📄 توقيع إلكتروني قانوني</li>
+                        <li>🆔 تأكيد الهوية</li>
+                        <li>📜 سجل وتتبع كامل</li>
+                        <li>🖥️ واجهة مستخدم سهلة الاستخدام</li>
+                        <li>🔗 التكامل مع التطبيقات الأخرى</li>
+                        <li>🔒 التشفير والأمان</li>
+                    </ul>
+                    <button class="demo-button">عرض تجريبي</button>
+                </div>
 
-            <div class="node">
-                <div class="icon"><i class="fas fa-check-circle"></i></div>
-                <h2>إدارة المهام</h2>
-                <div class="status-label status-released">تم الإصدار وفي UAT</div>
-                <ul>
-                    <li>لوحات كانبان</li>
-                    <li>إشعارات آلية</li>
-                </ul>
-                <button class="demo-button">عرض تجريبي</button>
-            </div>
+                <!-- Task Management Node -->
+                <div class="node">
+                    <div class="icon"><i class="fas fa-tasks"></i></div>
+                    <h3>إدارة المهام</h3>
+                    <div class="status-label status-dev">في مرحلة التطوير</div>
+                    <ul>
+                        <li>📊 أعمدة قابلة للتخصيص</li>
+                        <li>🔒 صلاحيات تعتمد على الأدوار</li>
+                        <li>📑 الأتمتة والأرشفة</li>
+                        <li>🔄 إعادة ترتيب المهام</li>
+                        <li>📈 سجلات المهام والتعليقات</li>
+                        <li>📞 تتبع التقدم والتواصل بشأن المهام</li>
+                    </ul>
+                    <button class="demo-button">عرض تجريبي</button>
+                </div>
 
-            <div class="node">
-                <div class="icon"><i class="fas fa-signature"></i></div>
-                <h2>التوقيع الإلكتروني</h2>
-                <div class="status-label status-initiation">مرحلة البدء</div>
-                <ul>
-                    <li>إعداد المستندات</li>
-                    <li>إدارة وتتبع المستندات</li>
-                </ul>
-                <button class="demo-button">عرض تجريبي</button>
-            </div>
+                <!-- Committees Management Node -->
+                <div class="node">
+                    <div class="icon"><i class="fas fa-users-cog"></i></div>
+                    <h3>إدارة اللجان</h3>
+                    <div class="status-label status-released">تم الإصدار</div>
+                    <ul>
+                        <li>📅 إدارة متكاملة لجميع مراحل الاجتماع</li>
+                        <li>📝 قبل الاجتماع</li>
+                        <li>🔍 أثناء الاجتماع</li>
+                        <li>📋 بعد الاجتماع</li>
+                        <li>📂 إدارة آمنة للمستندات</li>
+                        <li>🔗 التكامل مع التطبيقات الأخرى</li>
+                    </ul>
+                    <button class="demo-button">عرض تجريبي</button>
+                </div>
 
-            <div class="node">
-                <div class="icon"><i class="fas fa-calendar-check"></i></div>
-                <h2>إدارة الحضور</h2>
-                <div class="status-label status-deployment">مرحلة النشر</div>
-                <ul>
-                    <li>تتبع الحضور في الوقت الفعلي</li>
-                    <li>إدارة الإجازات</li>
-                </ul>
-                <button class="demo-button">عرض تجريبي</button>
-            </div>
+                <!-- NCEMA AI Chatbot Node -->
+                <div class="node">
+                    <div class="icon"><i class="fas fa-comments"></i></div>
+                    <h3>روبوت الدردشة الذكي</h3>
+                    <div class="status-label status-uat">اختبار قبول المستخدم</div>
+                    <ul>
+                        <li>🤖 التفاعل مع المستخدم</li>
+                        <li>📜 سجل المحادثات</li>
+                        <li>🧠 الردود الآلية الذكية</li>
+                        <li>🌍 دعم اللغة العربية</li>
+                        <li>🔗 إمكانية الوصول عبر الشبكة الداخلية</li>
+                        <li>💬 إدارة المحادثات</li>
+                    </ul>
+                    <button class="demo-button">عرض تجريبي</button>
+                </div>
 
-            <div class="node">
-                <div class="icon"><i class="fas fa-mobile-alt"></i></div>
-                <h2>تطبيق الجوال</h2>
-                <div class="status-label status-initiation">مرحلة البدء</div>
-                <ul>
-                    <li>تنبيهات الطوارئ</li>
-                    <li>إدارة الحضور</li>
-                    <li>مركز المعرفة</li>
-                    <li>الإشعارات الفورية</li>
-                </ul>
-                <button class="demo-button">عرض تجريبي</button>
-            </div>
+                <!-- Mobile Application Node -->
+                <div class="node">
+                    <div class="icon"><i class="fas fa-mobile-alt"></i></div>
+                    <h3>تطبيق الجوال</h3>
+                    <div class="status-label status-dev">في مرحلة التطوير</div>
+                    <ul>
+                        <li>🚨 التنبيهات الفورية</li>
+                        <li>📋 حائط المعلومات المركزية</li>
+                        <li>📖 التفاعلات مع المحتوى</li>
+                        <li>📚 دليل الموظفين</li>
+                        <li>🛠️ إدارة الخدمات</li>
+                        <li>⚠️ مستوى الاستعداد والتنبيهات الطارئة</li>
+                    </ul>
+                    <button class="demo-button">عرض تجريبي</button>
+                </div>
 
-            <div class="node">
-                <div class="icon"><i class="fas fa-comments"></i></div>
-                <h2>مشروع الدردشة</h2>
-                <div class="status-label status-deployment">مرحلة النشر</div>
-                <ul>
-                    <li>ردود آلية على الاستفسارات المتكررة</li>
-                    <li>دعم العملاء على مدار الساعة</li>
-                </ul>
-                <button class="demo-button">عرض تجريبي</button>
+                <!-- Attendance Management Node -->
+                <div class="node">
+                    <div class="icon"><i class="fas fa-user-check"></i></div>
+                    <h3>إدارة الحضور</h3>
+                    <div class="status-label status-released">تم الإصدار</div>
+                    <ul>
+                        <li>⏰ تتبع الحضور في الوقت الفعلي</li>
+                        <li>📊 بيانات حيوية لتسجيل الدخول والخروج </li>
+                        <li>🔒 بروتوكولات قوية لحماية البيانات</li>
+                        <li>📈 إنشاء تقارير مفصلة </li>
+                        <li>📅 تتبع الإجازات والموافقات عليها</li>
+                        <li>✉️ عملية مبسطة لتقديم الطلبات وتتبعها والموافقة عليها</li>
+                    </ul>
+                    <button class="demo-button">عرض تجريبي</button>
+                </div>
             </div>
         </div>
     </div>
